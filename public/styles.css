@@ -44,13 +44,18 @@ header {
   font-size: 56px;
   margin-right: 40%;
   line-height: 59px;
+  font-weight: 300;
+}
+
+.banner, .promo-box, .stat-container, .testimonial-box {
+  padding-top: 8%;
 }
 
 .banner {
-  padding-top: 8%;
   width: 100%;
   background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_crop,h_700,w_1500/v1476912417/stock-photo-happy-young-couple-have-fun-in-modern-kitchen-indoor-while-preparing-fresh-fruits-and-vegetables-87847660_invbwl.jpg) bottom / auto 100% no-repeat;
   background-size: cover;
+  border-bottom: solid 5em rgb(250, 250, 250);
 }
 
 .banner-bottom {
@@ -60,20 +65,44 @@ header {
 }
 
 button {
-    width: 500px;
-    height: 48px;
-    text-align: left;
-    font-size: 15px;
-    background-color: white;
-    color: rgb(43, 168, 222);
-    border: 0px;
-    padding-left: 11px;
+  width: 500px;
+  height: 48px;
+  text-align: left;
+  font-size: 15px;
+  background-color: white;
+  color: rgb(43, 168, 222);
+  border: 0px;
+  padding-left: 11px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.inner-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+}
+
+.inner-container h2, .inner-container h4 {
+  text-align: center;
+}
+
+.inner-container h2 {
+  font-weight: 300;
+  font-size: 1.875em;
+  color: rgb(89, 89, 89);
+}
+
+.inner-container h4 {
+  color: rgb(112, 134, 143);
 }
 
 h4 {
-    font-size: 19px;
-    font-weight: 300;
-    line-height: 28px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 28px;
 }
 
 .middle-row-center {

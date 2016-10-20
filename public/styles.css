@@ -99,6 +99,38 @@ button:hover {
   color: rgb(112, 134, 143);
 }
 
+.row {
+  display: flex;
+}
+
+.col {
+  padding: 6px;
+  width: 48%;
+}
+
+.card {
+  padding: 6px;
+  border: solid 1px rgb(216, 228, 227);
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  padding: 35px 60px;
+}
+#left-testimonial {
+  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_613/v1476925766/family_rhlzh3.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+#right-testimonial {
+  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_509/v1476925579/6123663-happy-family-having-fun-baby-boy-with-brown-curly-hair-and-his-mother_duhsck.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+
 h4 {
   font-size: 19px;
   font-weight: 300;

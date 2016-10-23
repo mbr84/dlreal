@@ -1,30 +1,24 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const transporter = require('./transporter')
-
+const transporter = require('./transporter');
 const hbs = require('hbs');
+const bodyParser = require('body-parser');
 
-
-const nodemailer = require('nodemailer');
-
-function handleSayHello(req, res) {
-
+function handleAgentRequest(req, res) {
   const text = 'confirmation email text';
 
   const mailOptions = {
     from: 'dolanrealtyca@gmail.com',
-    to: `${req.body.fname}`,
+    to: `${req.body.email}`,
     subject: 'We received your appointment request',
     text,
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
+  transporter.sendMail(mailOptions, (error) => {
     if (error) {
-      console.log(error);
       res.json({ yo: 'error' });
     } else {
-      console.log('Message sent: ' + info.response);
       res.render('index.html', { root: path.join(__dirname, './views') });
     }
   });
@@ -41,7 +35,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-  handleAgent(req, res);
+  handleAgentRequest(req, res);
 });
 
 app.listen(3000);

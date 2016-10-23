@@ -118,6 +118,7 @@ button:hover {
 .card-content {
   padding: 35px 60px;
 }
+
 #left-testimonial {
   background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_613/v1476925766/family_rhlzh3.jpg) 0 0 no-repeat;
   background-size: cover;
@@ -129,7 +130,6 @@ button:hover {
   background-size: cover;
   height: 270px;
 }
-
 
 h4 {
   font-size: 19px;

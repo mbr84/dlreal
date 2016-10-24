@@ -1,6 +1,12 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: inherit;
   font-family: 'Hind', sans-serif;
+  height: 100%;
+  position: relative;
 }
 
 main {
@@ -38,7 +44,7 @@ main {
   }
 }
 
-header a {
+header a, footer a {
   text-decoration: none;
   color: black;
 }
@@ -96,6 +102,14 @@ li {
 
 .about-box-container {
   margin: auto;
+}
+
+.contact-box {
+  /*margin-bottom: 15%;*/
+}
+
+.about-box-container {
+  margin-bottom: 5%;
 }
 
 .about-logo {
@@ -167,7 +181,7 @@ button:hover {
   text-align: center;
 }
 
-.inner-container h2 {
+.inner-container h2, .testimonial-headline {
   font-weight: 300;
   font-size: 1.875em;
   color: rgb(89, 89, 89);
@@ -197,6 +211,11 @@ button:hover {
   padding: 35px 60px;
 }
 
+.testimonial-headline {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
 #left-testimonial {
   background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_613/v1476925766/family_rhlzh3.jpg) 0 0 no-repeat;
   background-size: cover;
@@ -215,7 +234,22 @@ h4 {
   line-height: 28px;
 }
 
-.middle-row-center {
+.middle-row-center, .footer, .footer-index {
   display: flex;
   justify-content: space-between;
+}
+
+.footer, .footer-index {
+  justify-content: center;
+  padding: 8% 0px 1% 0px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 45%
+}
+
+.footer a, .footer-index a {
+  padding: 0px 5px;
 }

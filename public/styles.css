@@ -13,8 +13,8 @@ main {
     width: 732px;
   }
 
-  .contact-box {
-    width: 500px;
+  .contact-box, .about-box-container {
+    width: 600px;
   }
 }
 
@@ -23,8 +23,8 @@ main {
   .container {
     width: 956px;
   }
-  .contact-box {
-    width: 600px;
+  .contact-box, .about-box-container {
+    width: 750px;
   }
 }
 
@@ -33,8 +33,8 @@ main {
     width: 1164px;
   }
 
-  .contact-box {
-    width: 700px;
+  .contact-box, .about-box-container {
+    width: 900px;
   }
 }
 
@@ -58,8 +58,20 @@ header {
   justify-content: center;
 }
 
+header a {
+  padding-left: 50px;
+}
+
 .logo {
   font-weight: bold;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  list-style: none;
 }
 
 .banner-top {
@@ -69,8 +81,34 @@ header {
   font-weight: 300;
 }
 
-.banner, .promo-box, .stat-container, .testimonial-box, .carousel-box, .contact-box {
-  padding-top: 8%;
+.stat-container, .testimonial-box, .carousel-box {
+  padding-top: 18%;
+}
+
+.promo-box, .banner, .contact-box, .about-box, .about-box-container {
+  padding-top: 8%
+}
+
+.about-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-box-container {
+  margin: auto;
+}
+
+.about-logo {
+  margin: auto;
+  display: block;
+}
+
+.about-heading {
+  margin-left: 35%;
+}
+
+.about-box div {
+  max-width: 60%;
 }
 
 .contact-box {

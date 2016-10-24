@@ -241,13 +241,13 @@ h4 {
 
 .footer, .footer-index {
   justify-content: center;
-  padding: 8% 0px 1% 0px;
+  padding: 15% 0px 1% 0px;
 }
 
 .footer {
   position: absolute;
   bottom: 0px;
-  left: 43%
+  left: 40.5%
 }
 
 .footer a, .footer-index a {

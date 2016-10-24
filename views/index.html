@@ -54,9 +54,73 @@
         </div>
       </div>
     </div>
+  </section>
+  <section class="carousel-box">
+    <div class="container">
+      <div class="slider-for">
+      	<div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477341356/Varassaari5_pw4gpa.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477342287/2016080731-PJ-Houses-1800-Holly-Kellum-1906_nq9qkm.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477341648/54c4956d156f2_-_01-hbx-blue-house-exterior-0513-xln-42436446_nbazzu.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477342196/in-support-of-his-new-photo-book-13-hauntingly-beautiful-lawless-has-provided-us-with-photos-of-13-real-haunted-houses-across-america_lcbycg.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477343186/38df76f08d36cca06eee1081089a3bf9_ubonjq.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477339692/33a014e1600ecea05b29ba47c4c0c20a_bzol2d.jpg" />
+        </div>
+      </div>
 
+
+      <div class="slider-nav">
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477341356/Varassaari5_pw4gpa.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477342287/2016080731-PJ-Houses-1800-Holly-Kellum-1906_nq9qkm.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477341648/54c4956d156f2_-_01-hbx-blue-house-exterior-0513-xln-42436446_nbazzu.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477342196/in-support-of-his-new-photo-book-13-hauntingly-beautiful-lawless-has-provided-us-with-photos-of-13-real-haunted-houses-across-america_lcbycg.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477343186/38df76f08d36cca06eee1081089a3bf9_ubonjq.jpg" />
+        </div>
+        <div>
+          <img src="http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_780/v1477339692/33a014e1600ecea05b29ba47c4c0c20a_bzol2d.jpg" />
+        </div>
+      </div>
+    </div>
   </section>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.js"></script
+  <script type="text/javascript" src="slick/slick.js"></script>
+  <script type="text/javascript">
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    	autoplay: true,
+    	autoplaySpeed: 2000,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+    });
+  </script>
 </main>

@@ -22,10 +22,10 @@ body {
 }
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 18px;
-    padding-left: 18px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 18px;
+  padding-left: 18px;
 }
 
 header {
@@ -47,8 +47,22 @@ header {
   font-weight: 300;
 }
 
-.banner, .promo-box, .stat-container, .testimonial-box {
+.banner, .promo-box, .stat-container, .testimonial-box, .carousel-box {
   padding-top: 8%;
+}
+
+.slider-for {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.slider-nav {
+	margin: 30px auto;
+	width: 550px;
+}
+
+.slider-nav img {
+  width: 100px;
 }
 
 .banner {

@@ -34,6 +34,10 @@ app.get('/', (req, res) => {
   res.render('index.html', { root: path.join(__dirname, './views') });
 });
 
+app.get('/contact', (req, res) => {
+  res.render('contact.html', { root: path.join(__dirname, './views') });
+});
+
 app.post('/', (req, res) => {
   handleAgentRequest(req, res);
 });

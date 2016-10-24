@@ -3,15 +3,28 @@ body {
   font-family: 'Hind', sans-serif;
 }
 
+main {
+  background-color: #fffffe;
+  margin-top: 1px;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 732px;
   }
+
+  .contact-box {
+    width: 500px;
+  }
 }
+
 
 @media (min-width: 992px){
   .container {
     width: 956px;
+  }
+  .contact-box {
+    width: 600px;
   }
 }
 
@@ -19,6 +32,15 @@ body {
   .container {
     width: 1164px;
   }
+
+  .contact-box {
+    width: 700px;
+  }
+}
+
+header a {
+  text-decoration: none;
+  color: black;
 }
 
 .container {
@@ -47,8 +69,12 @@ header {
   font-weight: 300;
 }
 
-.banner, .promo-box, .stat-container, .testimonial-box, .carousel-box {
+.banner, .promo-box, .stat-container, .testimonial-box, .carousel-box, .contact-box {
   padding-top: 8%;
+}
+
+.contact-box {
+  text-align: center;
 }
 
 .slider-for {

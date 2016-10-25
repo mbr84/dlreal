@@ -1,8 +1,8 @@
 
 $('#edit').click(() => {
-  $('#cover, #modal').fadeTo(500, 1);
+  $('#cover, #modal').fadeTo(300, 1);
 });
 
 $('#cover').click(() => {
-  $('#cover, #modal').fadeTo(500, 0).hide();
+  $('#cover, #modal').fadeTo(300, 0).hide();
 });

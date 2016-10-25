@@ -146,32 +146,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.js"></script>
-  <script type="text/javascript">
-    $('.slider-for').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    	autoplay: true,
-    	autoplaySpeed: 2000,
-      arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      dots: true,
-      centerMode: true,
-      focusOnSelect: true
-    });
-    $('#edit').click(function(){
-      $('#cover, #modal').fadeTo(500,1);
-    });
-
-    $('#cover').click(function(){
-    $('#cover, #modal').fadeTo(500,0).hide();
-});
-  </script>
+  <script type="text/javascript" src="carousel.js"></script>
 </main>
 <footer>
   <div class="container">

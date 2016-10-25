@@ -337,3 +337,9 @@ h4 {
       width: 95%;
     }
   }
+
+  @media (max-width: 550px) {
+    button {
+      width: 85%;
+    }
+  }

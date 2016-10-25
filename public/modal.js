@@ -1,4 +1,3 @@
-
 $('#edit').click(() => {
   $('#cover, #modal').fadeTo(300, 1);
 });

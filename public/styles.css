@@ -96,11 +96,7 @@ main {
 
 input {
   width: 50.5%;
-}
-
-header a, footer a {
-  text-decoration: none;
-  color: black;
+  padding-left: 2%;
 }
 
 .container {
@@ -108,6 +104,11 @@ header a, footer a {
   margin-left: auto;
   padding-right: 18px;
   padding-left: 18px;
+}
+
+header a, footer a {
+  text-decoration: none;
+  color: black;
 }
 
 header {

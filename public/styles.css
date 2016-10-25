@@ -109,10 +109,6 @@ li {
   margin: auto;
 }
 
-.contact-box {
-  /*margin-bottom: 15%;*/
-}
-
 .about-box-container {
   margin-bottom: 5%;
 }
@@ -257,4 +253,18 @@ h4 {
 
 .footer a, .footer-index a {
   padding: 0px 15px;
+}
+
+@media (max-width: 500px) {
+  .about-box {
+    flex-direction: column;
+  }
+
+  .about-box div {
+    max-width: 100%;
+  }
+
+  .footer {
+    display: none;
+  }
 }

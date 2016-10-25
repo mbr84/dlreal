@@ -15,11 +15,3 @@ $('.slider-nav').slick({
   centerMode: true,
   focusOnSelect: true,
 });
-
-$('#edit').click(() => {
-  $('#cover, #modal').fadeTo(500, 1);
-});
-
-$('#cover').click(() => {
-  $('#cover, #modal').fadeTo(500, 0).hide();
-});

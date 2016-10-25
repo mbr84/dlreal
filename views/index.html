@@ -1,3 +1,30 @@
+<div id="cover"></div>
+<div id="modal">
+	<div class="inner-modal">
+<form method="post">
+		<div class="form-heading">
+		Talk to an Agent
+		</div>
+		<div class="form-field">
+			<label>First Name</label><br>
+			<input type="text" name="fname">
+		</div>
+		<div class="form-field">
+			<label>Last Name</label><br>
+			<input type="text" name="lname">
+		</div>
+		<div class="form-field">
+			<label>Property Address</label><br>
+			<input type="text" name="address">
+		</div>
+		<div class="form-field">
+			<label>Email</label><br>
+			<input type="text" name="email">
+		</div>
+    <input class="submit" type="submit">
+</form>
+	</div>
+</div>
 <main>
   <section class="banner">
     <div class="container">
@@ -10,7 +37,11 @@
         <h4><strong>Sell Your Home to Dolan Realty</strong> <br />
           Talk to an experienced California real estate agent today.
         </h4>
-        <button type="button" name="button">Start Now!</button>
+        <button type="button"
+                id="edit"
+                name="button">
+                Start Now!
+        </button>
 
       </div>
     </div>
@@ -125,6 +156,13 @@
       centerMode: true,
       focusOnSelect: true
     });
+    $('#edit').click(function(){
+      $('#cover, #modal').fadeTo(500,1);
+    });
+
+    $('#cover').click(function(){
+    $('#cover, #modal').fadeTo(500,0).hide();
+});
   </script>
 </main>
 <footer>

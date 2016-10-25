@@ -34,6 +34,13 @@ main {
   margin-top: 1px;
 }
 
+@media (min-width: 350px) {
+  #modal {
+    width: 95%;
+    left: 3%;
+  }
+}
+
 @media (min-width: 400px) {
   .slider-for {
     width: 380px;
@@ -41,11 +48,6 @@ main {
 
   .slider-nav {
     width: 350px;
-  }
-
-  #modal {
-    width: 95%;
-    left: 3%;
   }
 }
 
@@ -339,6 +341,15 @@ h4 {
 .footer a, .footer-index a {
   padding: 0px 15px;
 }
+
+@media (min-width: 350px) {
+  .slider-for {
+    width: 330px;
+  }
+
+  .slider-nav {
+    width: 300px;
+  }
 
 @media (min-width: 500px) {
   .slider-for {

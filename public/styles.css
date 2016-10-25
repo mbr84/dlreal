@@ -220,7 +220,6 @@ button:hover {
 
 .slider-nav {
 	margin: 30px auto;
-	width: 550px;
 }
 
 .slider-nav img {
@@ -320,17 +319,29 @@ h4 {
   .slider-for {
     width: 380px;
   }
+
+  .slider-nav {
+    width: 350px;
+  }
 }
 
 @media (min-width: 500px) {
   .slider-for {
     width: 480px;
   }
+
+  .slider-nav {
+    width: 450px;
+  }
 }
 
 @media (min-width: 600px) {
   .slider-for {
     width: 580px;
+  }
+
+  .slider-nav {
+    width: 550px;
   }
 }
 

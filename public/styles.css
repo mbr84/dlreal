@@ -95,6 +95,11 @@ li {
   padding-top: 8%
 }
 
+.promo-box img {
+  display: block;
+  margin: auto;
+}
+
 .about-box {
   display: flex;
   justify-content: space-between;

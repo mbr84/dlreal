@@ -6,12 +6,12 @@ const hbs = require('hbs');
 const bodyParser = require('body-parser');
 
 function handleAgentRequest(req, res) {
-  const text = 'confirmation email text';
+  const text = `We received your appointment request regarding the property at ${req.body.street}, ${req.body.city}. An agent will be in touch with you at ${req.body.email} soon.`;
 
   const mailOptions = {
     from: 'dolanrealtyca@gmail.com',
     to: `${req.body.email}`,
-    subject: 'We received your appointment request',
+    subject: 'Confirmation from Dolan Realty',
     text,
   };
 

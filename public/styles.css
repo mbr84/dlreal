@@ -1,3 +1,23 @@
+/*to swap out the banner image or testimonial images, upload an image to Cloudinary, scale to fit, and past in the url below*/
+.banner {
+  width: 100%;
+  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/v1477412156/o-COUPLE-LOVE-TALKING-facebook_s05xxd.jpg) bottom / auto 100% no-repeat;
+  background-size: cover;
+  border-bottom: solid 5em rgb(250, 250, 250);
+}
+
+#left-testimonial {
+  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_613/v1476925766/family_rhlzh3.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+#right-testimonial {
+  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_509/v1476925579/6123663-happy-family-having-fun-baby-boy-with-brown-curly-hair-and-his-mother_duhsck.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
 html {
   height: 100%;
 }
@@ -166,13 +186,6 @@ li {
   font-weight: 300;
 }
 
-.banner {
-  width: 100%;
-  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/v1477412156/o-COUPLE-LOVE-TALKING-facebook_s05xxd.jpg) bottom / auto 100% no-repeat;
-  background-size: cover;
-  border-bottom: solid 5em rgb(250, 250, 250);
-}
-
 .banner-bottom {
   margin: 10% 0px 0px 0px;
   padding: 6% 0px;
@@ -299,18 +312,6 @@ button:hover {
 .testimonial-headline {
   text-align: center;
   padding-bottom: 3%;
-}
-
-#left-testimonial {
-  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_613/v1476925766/family_rhlzh3.jpg) 0 0 no-repeat;
-  background-size: cover;
-  height: 270px;
-}
-
-#right-testimonial {
-  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_509/v1476925579/6123663-happy-family-having-fun-baby-boy-with-brown-curly-hair-and-his-mother_duhsck.jpg) 0 0 no-repeat;
-  background-size: cover;
-  height: 270px;
 }
 
 h4 {

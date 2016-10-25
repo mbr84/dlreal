@@ -6,7 +6,14 @@ const hbs = require('hbs');
 const bodyParser = require('body-parser');
 
 function handleAgentRequest(req, res) {
-  const text = `We received your request to speak with an agent regarding the property at ${req.body.street}, ${req.body.city}. An agent will be in touch with you at ${req.body.email} soon.`;
+  const text = `
+  Dear ${req.body.fname} ${req.body.lname},
+  We received your request to speak with an agent regarding the property
+  at ${req.body.street}, ${req.body.city}. An agent will be in touch
+  with you at ${req.body.email} soon.
+
+  Dolan Realty
+  `;
 
   const mailOptions = {
     from: 'dolanrealtyca@gmail.com',

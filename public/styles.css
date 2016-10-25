@@ -77,14 +77,15 @@ main {
 }
 
 .submit {
-	margin-left: 48%;
-	width: 52%;
+	margin-left: 46%;
+	width: 54%;
 	border-radius: 2px;
 	margin-top: 7%;
 	background-color: dodgerblue;
 	border: none;
 	color: white;
 	font-size: 16px;
+  padding: 2%;
 }
 
 .form-heading {

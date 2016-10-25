@@ -24,7 +24,6 @@ main {
   }
 }
 
-
 @media (min-width: 992px){
   .container {
     width: 956px;
@@ -228,6 +227,11 @@ button:hover {
   width: 100px;
 }
 
+.image-wrapper img {
+  max-width: 100%;
+  width:auto;
+  height: auto;
+}
 
 .inner-container {
   margin-left: auto;
@@ -310,6 +314,36 @@ h4 {
 
 .footer a, .footer-index a {
   padding: 0px 15px;
+}
+
+@media (min-width: 400px) {
+  .slider-for {
+    width: 380px;
+  }
+}
+
+@media (min-width: 500px) {
+  .slider-for {
+    width: 480px;
+  }
+}
+
+@media (min-width: 600px) {
+  .slider-for {
+    width: 580px;
+  }
+}
+
+@media (min-width: 700px) {
+  .slider-for {
+    width: 680px;
+  }
+}
+
+@media (min-width: 800px) {
+  .slider-for {
+    width: 780px;
+  }
 }
 
 

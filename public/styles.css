@@ -111,6 +111,16 @@ main {
 	box-shadow: 5px 5px 10px #888888;
 }
 
+.success-message {
+  font-weight: 400;
+  text-align: center;
+  margin: 120px auto 120px auto;
+}
+
+.error-message {
+  margin-bottom: 0px;
+}
+
 .form-field {
 	display: flex;
 	justify-content: space-between;

@@ -36,6 +36,8 @@ app.engine('html', hbs.__express);
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const port = process.env.PORT || 8080;
+
 
 app.get('/', (req, res) => {
   res.render('index.html', { root: path.join(__dirname, './views') });
@@ -53,4 +55,4 @@ app.post('/', (req, res) => {
   handleAgentRequest(req, res);
 });
 
-app.listen(3000);
+app.listen(port);

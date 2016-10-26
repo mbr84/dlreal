@@ -7,11 +7,11 @@ const bodyParser = require('body-parser');
 
 const nodemailer = require('nodemailer');
 
-module.exports = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: 'dolanrealtyca@gmail.com',
-    pass: ENV['PASSWORD'],
+    pass: process.env.PASSWORD,
   },
 });
 

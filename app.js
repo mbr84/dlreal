@@ -7,8 +7,7 @@ const bodyParser = require('body-parser');
 
 function handleAgentRequest(req, res) {
   const text = `
-  Dear ${req.body.fname} ${req.body.lname},
-  
+  Dear ${req.body.fname} ${req.body.last},
   We received your request to speak with an agent regarding the property
   at ${req.body.street}, ${req.body.city}. An agent will be in touch
   with you at ${req.body.email} soon.
@@ -25,9 +24,9 @@ function handleAgentRequest(req, res) {
 
   transporter.sendMail(mailOptions, (error) => {
     if (error) {
-      res.render('index.html', { root: path.join(__dirname, './views') });
+      res.json({ yo: 'error' });
     } else {
-      res.render('index.html', { root: path.join(__dirname, './views') });
+      res.json({ yo: 'success' });
     }
   });
 }

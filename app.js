@@ -1,9 +1,19 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const transporter = require('./transporter');
+// const transporter = require('./transporter');
 const hbs = require('hbs');
 const bodyParser = require('body-parser');
+
+const nodemailer = require('nodemailer');
+
+module.exports = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    user: 'dolanrealtyca@gmail.com',
+    pass: PASSWORD,
+  },
+});
 
 function handleAgentRequest(req, res) {
   const text = `

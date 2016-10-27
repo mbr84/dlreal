@@ -352,14 +352,19 @@ h4 {
   padding: 0px 15px;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 320px) {
   .slider-for {
-    width: 330px;
+    width: 98%;
   }
 
   .slider-nav {
-    width: 300px;
+    width: 96%;
   }
+
+  header a {
+    padding-left: 10px;
+  }
+}
 
 @media (min-width: 500px) {
   .slider-for {

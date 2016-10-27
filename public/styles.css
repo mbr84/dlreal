@@ -398,7 +398,7 @@ h4 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .header-links {
     display: flex;
     flex-direction: column;

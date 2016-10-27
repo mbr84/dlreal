@@ -393,6 +393,16 @@ h4 {
   }
 }
 
+@media (max-width: 400px) {
+  .header-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    height: 90px
+  }
+}
 
 @media (max-width: 500px) {
   .about-box {
@@ -407,9 +417,13 @@ h4 {
     display: none;
   }
 
+  .middle-row-center {
+    flex-direction: column;
+  }
+
 }
 
-  @media screen and (max-width: 650px) {
+  @media (max-width: 650px) {
     .row {
       flex-direction: column;
     }

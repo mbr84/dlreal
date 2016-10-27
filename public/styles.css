@@ -409,7 +409,7 @@ h4 {
 
 }
 
-  @media (max-width: 650px) {
+  @media screen and (max-width: 650px) {
     .row {
       flex-direction: column;
     }

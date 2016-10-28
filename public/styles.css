@@ -110,7 +110,7 @@ main {
 }
 
 #modal {
-  position: absolute;
+  position: fixed;
 	background-color: #fffffe;
 	top: 20%;
   height: auto;

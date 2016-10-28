@@ -1,12 +1,15 @@
 /* eslint-disable no-undef*/
 
-
 $('#edit').click(() => {
   $('#cover, #modal').fadeTo(300, 1);
 });
 
 $('#cover').click(() => {
   $('#cover, #modal').fadeTo(300, 0).hide();
+});
+
+$(document).keyup((e) => {
+  if (e.keyCode === 27) { $('#cover, #modal').fadeTo(300, 0).hide(); }
 });
 
 const errorMessage = `<h4 class="error-message">There was an error fulfilling your request. Please ensure you've entered a vaild email address and try again</h4>`;

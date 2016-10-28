@@ -103,7 +103,7 @@ main {
 #cover {
   position: absolute;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 2800px;
   background: rgba(0,0,0,0.25);
   z-index: 1;
   display: none;

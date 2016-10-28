@@ -31,7 +31,7 @@ body {
 
 main {
   background-color: #fffffe;
-  margin-top: 1px;
+  margin-top: -20px;
 }
 
 @media (min-width: 350px) {
@@ -89,6 +89,15 @@ main {
   .contact-box, .about-box-container {
     width: 900px;
   }
+}
+
+
+.navbar-header {
+  background-color: white;
+}
+
+#example-navbar-collapse {
+  background-color: white;
 }
 
 #cover {
@@ -204,7 +213,7 @@ li {
   color: white;
 }
 
-button {
+#edit {
   width: 500px;
   height: 48px;
   text-align: left;
@@ -215,7 +224,7 @@ button {
   padding-left: 11px;
 }
 
-button:hover {
+#edit:hover {
   cursor: pointer;
 }
 
@@ -432,18 +441,18 @@ h4 {
 
 }
 
-  @media (max-width: 650px) {
-    .row {
-      flex-direction: column;
-    }
-
-    .col {
-      width: 95%;
-    }
+@media (max-width: 650px) {
+  .row {
+    flex-direction: column;
   }
 
-  @media (max-width: 550px) {
-    button {
-      width: 95%;
-    }
+  .col {
+    width: 95%;
   }
+}
+
+@media (max-width: 550px) {
+  #edit {
+    width: 95%;
+  }
+}

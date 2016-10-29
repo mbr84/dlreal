@@ -103,10 +103,11 @@ main {
 #cover {
   position: absolute;
   min-width: 100%;
-  min-height: 2800px;
+  min-height: 2950px;
   background: rgba(0,0,0,0.25);
   z-index: 1;
   display: none;
+  margin-top: -25px;
 }
 
 #modal {

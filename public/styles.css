@@ -172,21 +172,9 @@ input {
   padding-left: 18px;
 }
 
-header a, footer a {
+footer a {
   text-decoration: none;
   color: black;
-}
-
-header {
-  height: 56px;
-  box-shadow: 0px 0px 2px #ccc;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-}
-
-header a {
-  padding-left: 50px;
 }
 
 .logo {
@@ -371,11 +359,8 @@ h4 {
     width: 96%;
   }
 
-  header a {
-    padding-left: 10px;
-  }
 
-  footer a, header a, .logo {
+  footer a, .logo {
     text-align: center;
   }
 }
@@ -412,16 +397,6 @@ h4 {
   }
 }
 
-@media (max-width: 500px) {
-  .header-links {
-    display: flex;
-    flex-direction: column;
-  }
-
-  header {
-    height: 90px
-  }
-}
 
 @media (max-width: 500px) {
   .about-box {

@@ -397,7 +397,6 @@ h4 {
   }
 }
 
-
 @media (max-width: 500px) {
   .about-box {
     flex-direction: column;
@@ -414,7 +413,6 @@ h4 {
   .middle-row-center {
     flex-direction: column;
   }
-
 }
 
 @media (max-width: 650px) {

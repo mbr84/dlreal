@@ -202,7 +202,7 @@ li {
   color: white;
 }
 
-#edit {
+.edit, .follow {
   width: 500px;
   height: 48px;
   text-align: left;
@@ -213,8 +213,17 @@ li {
   padding-left: 11px;
 }
 
-#edit:hover {
+.edit:hover {
   cursor: pointer;
+}
+
+.follow {
+  position: fixed;
+  top: -50px;
+  border: 1px solid rgb(43, 168, 222);
+  z-index: 100;
+  display: none;
+  transition: top 1s;
 }
 
 .stat-container, .testimonial-box, .carousel-box {

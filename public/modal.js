@@ -1,6 +1,10 @@
 /* eslint-disable no-undef*/
 
-$('#edit').on('click touch', () => {
+$('.edit').on('click touch', () => {
+  $('#cover, #modal').fadeTo(300, 1);
+});
+
+$('.follow').on('click touch', () => {
   $('#cover, #modal').fadeTo(300, 1);
 });
 

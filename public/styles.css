@@ -434,7 +434,11 @@ h4 {
 }
 
 @media (max-width: 550px) {
-  .edit, .follow {
+  .edit {
     width: 95%;
+  }
+
+  .follow {
+    width: 87%;
   }
 }

@@ -1,13 +1,22 @@
 /* eslint-disable no-undef */
 
 $(document).ready(() => {
-  const elBottom = $('.edit').offset().top;
+  let elBottom = $('.edit').offset().top;
 
-  $(document).scroll(() => {
+  const toggleFollowerButton = () => {
     if (elBottom - $(window).scrollTop() < 0) {
       $('.follow').css('display', 'block');
     } else {
       $('.follow').css('display', 'hidden');
     }
+  };
+
+  $(window).resize(() => {
+    elBottom = $('.edit').offset().top;
+    toggleFollowerButton();
+  });
+
+  $(document).scroll(() => {
+    toggleFollowerButton();
   });
 });

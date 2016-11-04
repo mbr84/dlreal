@@ -5,9 +5,9 @@ $(document).ready(() => {
 
   $(document).scroll(() => {
     if (elBottom - $(window).scrollTop() < 0) {
-      $('.follow').css({ display: 'block', top: '3px' });
+      $('.follow').css('display', 'block');
     } else {
-      $('.follow').css({ display: 'hidden' });
+      $('.follow').css('display', 'hidden');
     }
   });
 });

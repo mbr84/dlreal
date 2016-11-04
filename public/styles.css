@@ -219,11 +219,10 @@ li {
 
 .follow {
   position: fixed;
-  top: -50px;
+  top: 1px;
   border: 1px solid rgb(43, 168, 222);
   z-index: 100;
   display: none;
-  transition: top 1s;
 }
 
 .stat-container, .testimonial-box, .carousel-box {

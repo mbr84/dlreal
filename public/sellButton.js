@@ -16,7 +16,7 @@ $(document).ready(() => {
     toggleFollowerButton();
   });
 
-  $(document).scroll(() => {
+  $(document).on('scroll touchmove', () => {
     toggleFollowerButton();
   });
 });

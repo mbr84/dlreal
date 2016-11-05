@@ -8,7 +8,7 @@ $(document).ready(() => {
     $('.follow').css({ right: percentRight });
 
 
-    if (elBottom - $(window).scrollTop() < 5) {
+    if (elBottom - $(window).scrollTop() < -100) {
       $('.follow').css('top', '1px');
     } else {
       $('.follow').css('top', '-60px');

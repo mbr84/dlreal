@@ -206,11 +206,11 @@ li {
   width: 500px;
   height: 48px;
   text-align: left;
-  font-size: 15px;
+  font-size: 20px;
   background-color: white;
   color: rgb(43, 168, 222);
   border: 0px;
-  padding-left: 11px;
+  padding-left: 18px;
 }
 
 .edit:hover {
@@ -219,10 +219,10 @@ li {
 
 .follow {
   position: fixed;
-  top: -60px;
   border: 1px solid rgb(43, 168, 222);
   z-index: 100;
-  transition: top .5s;
+  top: 1px;
+  display: none;
 }
 
 .stat-container, .testimonial-box, .carousel-box {

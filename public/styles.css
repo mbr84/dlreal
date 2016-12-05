@@ -1,4 +1,3 @@
-/*to swap out the banner image or testimonial images, upload an image to Cloudinary, scale to fit, and past in the url below*/
 .banner {
   width: 100%;
   background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/v1477412156/o-COUPLE-LOVE-TALKING-facebook_s05xxd.jpg) bottom / auto 100% no-repeat;
@@ -7,13 +6,13 @@
 }
 
 #left-testimonial {
-  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_613/v1476925766/family_rhlzh3.jpg) 0 0 no-repeat;
+  background: url(http://res.cloudinary.com/dtwgk5mnq/image/upload/c_scale,w_509/v1480364337/family_rhlzh3_r0jl86.jpg) 0 0 no-repeat;
   background-size: cover;
   height: 270px;
 }
 
 #right-testimonial {
-  background: url(http://res.cloudinary.com/dxbwq1eyw/image/upload/c_scale,w_509/v1476925579/6123663-happy-family-having-fun-baby-boy-with-brown-curly-hair-and-his-mother_duhsck.jpg) 0 0 no-repeat;
+  background: url(http://res.cloudinary.com/dtwgk5mnq/image/upload/c_scale,w_509/v1480364336/6123663-happy-family-having-fun-baby-boy-with-brown-curly-hair-and-his-mother_duhsck_ewg4wa.jpg) 0 0 no-repeat;
   background-size: cover;
   height: 270px;
 }
@@ -34,7 +33,7 @@ main {
   margin-top: -20px;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 319px) {
   #modal {
     width: 95%;
     left: 3%;
@@ -121,6 +120,10 @@ main {
 	box-shadow: 5px 5px 10px #888888;
 }
 
+.g-recaptcha {
+  margin-top: 10px;
+}
+
 .success-message {
   font-weight: 400;
   text-align: center;
@@ -132,8 +135,12 @@ main {
 }
 
 .form-field {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin-top: 10px;
 }
 
@@ -146,7 +153,7 @@ main {
 	width: 54%;
 	border-radius: 2px;
 	margin-top: 7%;
-	background-color: dodgerblue;
+	background-color: #81c1ff;
 	border: none;
 	color: white;
 	font-size: 16px;
@@ -223,6 +230,7 @@ li {
   z-index: 100;
   top: -60px;
   text-align: center;
+  -webkit-transition: .5s top;
   transition: .5s top;
   padding: 2px 6px 3px 6px;
 }
@@ -241,8 +249,12 @@ li {
 }
 
 .about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about-box-container {
@@ -310,6 +322,8 @@ li {
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -341,12 +355,18 @@ h4 {
 }
 
 .middle-row-center, .footer, .footer-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer, .footer-index {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 8% 0px 1% 0px;
 }
 
@@ -409,7 +429,10 @@ h4 {
 
 @media (max-width: 500px) {
   .about-box {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .about-box div {
@@ -421,13 +444,19 @@ h4 {
   }
 
   .middle-row-center {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 @media (max-width: 650px) {
   .row {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .col {

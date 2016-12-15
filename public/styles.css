@@ -403,6 +403,19 @@ h4 {
   .slider-nav {
     width: 450px;
   }
+
+  .nav-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  #navbar-white {
+    background: white;
+  }
+
+  #header-links {
+    float: right;
+  }
 }
 
 @media (min-width: 600px) {
